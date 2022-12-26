@@ -43,7 +43,7 @@ Route::delete('/empresas/{id}', [EmpresasController::class, 'destroy']);
 
 
 Route::get('/vagas/{id}', [VagasController::class, 'show']);
-Route::get('/vagas', [VagasController::class, 'index']);
+Route::get('/vagas', [VagasController::class, 'index']); 
 Route::post('/vagas', [VagasController::class, 'store']);
 Route::post('/vagas/{id}', [VagasController::class, 'store']);
 Route::put('/vagas/{id}', [VagasController::class, 'update']);
