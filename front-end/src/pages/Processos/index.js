@@ -1,13 +1,17 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 import { ContainerPage, TitlePage } from "../../components/Main";
 class Processos extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            Processos: []
+            Processos: [],
+            
         }
     }
 
@@ -29,7 +33,7 @@ class Processos extends React.Component {
         return (
             <ContainerPage>
                 <br></br>
-                <TitlePage><b><center>Processos Disponíveis</center></b></TitlePage>
+                <TitlePage><b><center>Processos de seleção em andamento</center></b></TitlePage>
                 <Table striped bordered hover size="sm">
                     <thead>
                         <tr>
@@ -42,13 +46,16 @@ class Processos extends React.Component {
                     </thead>
                     <tbody>
                         {
-                            this.state.Processos.map((Processo) =>
+                            this.state.Processos.map((Processos) =>
                                 <tr>
                                     <td>{Processos.status_processos}</td>
                                     <td>{Processos.vaga_id}</td>
                                     <td>{Processos.candidato_id}</td>
                                     <td>{Processos.fase_id}</td>
-                                    <td>Atualizar/Excluir</td>
+                                    <td>
+                                     <Button  variant="secondary"><Link to={"/Processos/" + Processos.id} style={{ textDecoration: 'none', color: 'white' }} >Editar</Link></Button>
+                                     <Button  variant="danger" onClick={() => this.deletarVaga(Processos.id)}>Cancelar</Button>
+                                    </td>
                                 </tr>
                             )
                         }
