@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+
+.login-form-btn2 {
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right, rgb(91, 81, 153), #00008b);
+  }

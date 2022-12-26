@@ -1,0 +1,59 @@
+SuaVaga | Sistema de Recrutamento e Seleção Digital
+Sistema de Recrutamento e Seleção que ajuda pequenas e médias empresas 
+a digitalizarem seus processos seletivos de forma simples e rápida.
+
+
+Instalação inicial na máquina:
+
+baixa Node js Version: 18.12.1 : https://nodejs.org/en/download/
+
+1. Instala Node js
+2. Abre o cmd :
+   Verifica a versão do Node e do NPM : 8.19.2
+
+
+Vai no CMD:
+Encontra a pasta para criar o projeto react 
+1. cd ProjetoSSD
+2. Criar projeto REACT comando: npx create-react-app front-end
+3. Atualiza npm > npm install -g npm@9.1.1
+4. Entra na pasta do projeto : cd front-end , e dá um NPM START para iniciar o projeto
+5: Caminho no navegador: http://localhost:3000/
+6. Adicionar variável de ambiente no path: C:\Program Files\nodejs
+
+Estilizando o Site
+
+1. Instalar no Terminal: npm install styled-components --save 
+
+
+Configurando rotas
+
+Instalar o Routes
+1. npm install react-router-dom --save
+npm install react-router-dom@latest
+
+
+
+
+Adicionando os Icons de Login
+1. https://mui.com/material-ui/material-icons/
+
+2. Baixar a biblioteca
+CMD terminal: npm install @material-ui/core @material-ui/icons
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+
+3.Instalando Firebase
+ npm install firebase
+
+
+
+
+
+#API PROJETO
+instalar composer
+
+
+
+
+
+
